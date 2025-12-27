@@ -1,3 +1,3 @@
 function noConsent() {
-  alert("Too late 😌 You’re already here ❤️");
+  alert("Aww 🥺 you HAVE to say yes… this was made with love 💖");
 }
