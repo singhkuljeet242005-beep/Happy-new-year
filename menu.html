@@ -6,6 +6,11 @@
 </head>
 <body class="center">
 
+<h1>Choose Something 💝</h1>
+<p>Each button is a little piece of us 🥺</p>
+
+<div class="menu">
+
 <h1>What do you want to see first? 🥰</h1>
 
 <button onclick="location.href='memories.html'">💕 Happy Memories</button>
@@ -13,6 +18,22 @@
 <button onclick="location.href='funny.html'">😂 Funny Moments</button>
 <button onclick="location.href='cute.html'">🧸 Cute Things</button>
 <button onclick="location.href='final.html'">🎆 Final Surprise</button>
+
+</div>
+
+<script>
+  // subtle floating hearts
+  setInterval(() => {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "💗";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (12 + Math.random() * 18) + "px";
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 6000);
+  }, 1200);
+</script>
 
 </body>
 </html>
