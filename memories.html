@@ -6,15 +6,36 @@
 </head>
 <body class="center">
 
-<h1>Our Happy Memories 📸</h1>
+<h1>Our Happy Memories 📸💞</h1>
+<p>Every picture here… is a piece of my heart 🥺</p>
 
-<img src="images/photo1.jpeg">
-<p>That smile… I still fall for it ❤️</p>
+<div class="memory">
+  <img src="images/photo1.jpeg">
+  <p>That smile… I still fall for it every time ❤️</p>
+</div>
 
-<img src="images/photo2.jpeg">
-<p>This moment is my favorite 🥺</p>
+<div class="memory">
+  <img src="images/photo2.jpeg">
+  <p>This moment is my favorite 🥰</p>
+</div>
 
-<button onclick="location.href='menu.html'">Back 💫</button>
+<button onclick="location.href='menu.html'">Back 💗</button>
+
+<script>
+  // Soft floating hearts
+  setInterval(() => {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "💖";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (14 + Math.random() * 18) + "px";
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+      heart.remove();
+    }, 7000);
+  }, 900);
+</script>
 
 </body>
 </html>
