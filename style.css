@@ -235,3 +235,46 @@ button:hover {
     opacity: 0;
   }
 }
+/* 🌸 Memories Page Styling 🌸 */
+
+.memory {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  margin: 25px auto;
+  width: 260px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(255, 150, 180, 0.25);
+  animation: fadeUp 1.3s ease;
+}
+
+.memory img {
+  width: 100%;
+  border-radius: 15px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.memory img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 100, 150, 0.4);
+}
+
+.memory p {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #555;
+}
+
+/* Softer hearts for memories */
+
+.heart {
+  position: fixed;
+  bottom: -20px;
+  font-size: 18px;
+  animation: floatUp 7s linear infinite;
+  opacity: 0.5;
+}
+
+/* Smooth page feeling */
+body {
+  overflow-x: hidden;
+}
