@@ -6,12 +6,28 @@
 </head>
 <body class="center">
 
-<h1>Why are you like this 😭</h1>
-<p>But still… my favorite human 😌</p>
+<h1>Why are you like this 😂</h1>
+<p>But still… my favorite human 🥺💗</p>
 
-<img src="images/funny1.jpeg">
+<img src="images/funny1.jpeg" alt="Funny memory">
 
-<button onclick="location.href='menu.html'">Back 💫</button>
+<button onclick="location.href='menu.html'">Back 💞</button>
+
+<script>
+  // Floating hearts generator
+  setInterval(() => {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "💗";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (16 + Math.random() * 20) + "px";
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+      heart.remove();
+    }, 6000);
+  }, 600);
+</script>
 
 </body>
 </html>
