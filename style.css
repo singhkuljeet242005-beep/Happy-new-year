@@ -550,3 +550,51 @@ body {
 button:active {
   transform: scale(0.95);
 }
+/* 💗 CONSENT PAGE WOW */
+
+.consent-bg {
+  background: linear-gradient(135deg, #ffd6e8, #ffeef6);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 25px;
+  max-width: 350px;
+  box-shadow: 0 15px 30px rgba(255, 182, 193, 0.4);
+}
+
+.pop-in {
+  animation: popIn 0.8s ease;
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.soft-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.btn-row {
+  margin-top: 20px;
+}
+
+.yes-btn {
+  background: #ff7eb9;
+  color: white;
+}
+
+.no-btn {
+  background: #ffc2d6;
+  color: #444;
+}
