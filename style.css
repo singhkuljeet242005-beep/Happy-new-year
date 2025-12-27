@@ -501,3 +501,52 @@ body {
 .no-btn:hover {
   transform: translateX(8px);
 }
+/* 🌍 GLOBAL SMOOTHNESS & TRANSITIONS */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  animation: pageFade 0.8s ease;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Page fade on load */
+@keyframes pageFade {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* 🌸 Global floating hearts (very subtle) */
+.global-heart {
+  position: fixed;
+  bottom: -20px;
+  font-size: 14px;
+  opacity: 0.35;
+  animation: globalFloat 10s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes globalFloat {
+  from {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  to {
+    transform: translateY(-120vh);
+    opacity: 0;
+  }
+}
+
+/* Softer tap feedback */
+button:active {
+  transform: scale(0.95);
+}
