@@ -377,3 +377,58 @@ body {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.05); }
 }
+/* 💌 MESSAGE PAGE STYLES */
+
+.message-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1.5s ease;
+}
+
+.message-box {
+  max-width: 600px;
+  animation: slideUp 1.5s ease;
+}
+
+.message-title {
+  font-size: 34px;
+  color: #ff4d6d;
+  margin-bottom: 20px;
+  animation: heartbeat 2.5s infinite;
+}
+
+.message-text {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 25px;
+  line-height: 1.7;
+  animation: fadeIn 2s ease;
+}
+
+.dream-text {
+  font-size: 17px;
+  color: #666;
+  font-style: italic;
+  line-height: 1.8;
+  margin-bottom: 35px;
+  animation: fadeIn 3s ease;
+}
+
+.back-btn {
+  padding: 12px 26px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ff8fab, #ffc2d1);
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(255, 120, 160, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 14px 30px rgba(255, 90, 140, 0.6);
+}
