@@ -81,3 +81,74 @@ img {
     transform: translateY(0);
   }
 }
+/* Cute page background */
+.cute-page {
+  background: linear-gradient(135deg, #ffd6e8, #fff1f7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Cute card */
+.cute-card {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 320px;
+  box-shadow: 0 15px 30px rgba(255, 105, 135, 0.25);
+  animation: popIn 1s ease;
+}
+
+/* Headline */
+.cute-card h1 {
+  color: #ff5f8f;
+  margin-bottom: 15px;
+}
+
+/* Message text */
+.message {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Hug line */
+.hug {
+  margin-top: 15px;
+  font-size: 15px;
+  color: #ff7aa2;
+  font-style: italic;
+}
+
+/* Button */
+.cute-card button {
+  margin-top: 25px;
+  padding: 10px 20px;
+  background: #ff5f8f;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cute-card button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 95, 143, 0.4);
+}
+
+/* Animation */
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
